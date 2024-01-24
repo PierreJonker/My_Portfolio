@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Profile</title>
+        <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background-color: lightblue;
+    }
+
+    #profile-image {
+      max-width: 50%;
+      height: 600px;
+      border-radius: 50%;
+      border-color: black;
+      box-shadow: 5px 5px;
+      margin: 20px auto; /* Center the image */
+      display: block; /* Center the image */
+    }
+  </style>
+    </head>
+    <body>
+        <div>
+            <h1><u>Pierre Jonker</u></h1>
+            <img src="Pierre_2023.jpg" alt="Your Name" id="profile-image">
+
+            <h2><u> Informasion About Me </u></h2>
+            <p>
+                I am Pierre I was born in 03 December 2005.<br>
+                I grew up in Ermelo Mpumelanga and is still living in Ermelo.
+                <br>
+                I finshed matric in 2023 at Ligbron Academy of Technology in
+                Ermelo. <br>
+                I enrolled into Code College to lurn for a Software Engineer and
+                Cyber Security Engineer from 2024-Present. <br>
+                I am learning the Java Bootcamp and after that the Security
+                Bootcamp of Code College. <br>
+                After my studies I will pursue a career into the Cyber Security
+                field as an Junior Cyber Security Engineer.
+            </p>
+
+            <h3><u>My Passion</u></h3>
+            <p>
+                I love spneding time with my family. <br>
+                I like to learn new things and how it work like in my spare
+                time. <br>
+                I like to solf problems that is diffuclut to me. <br>
+                I play e-sport as an hobby.
+            </p>
+
+            <h4><u> My Contact Details </u></h4>
+            <p>
+
+                <strong><u>Feel free to give me a call or send me a WhatsApp</u></strong>
+                <br>
+                <br>
+                Number : <a href="tel:072 366 1611">0723661611</a> <br>
+                Email Address : jonkepierre637@gmail.com
+
+            </p>
+
+        </div>
+
+        <script>
+    function updateAge() {
+      // Set your birthdate (format: month/day/year)
+      const birthdate = new Date('December 3, 2005');
+
+      // Get the current date
+      const currentDate = new Date();
+
+      // Calculate age
+      let age = currentDate.getFullYear() - birthdate.getFullYear();
+
+      // Adjust age if birthday hasn't occurred this year
+      if (
+        currentDate.getMonth() < birthdate.getMonth() ||
+        (currentDate.getMonth() === birthdate.getMonth() && currentDate.getDate() < birthdate.getDate())
+      ) {
+        age--;
+      }
+
+      // Display age information
+      const ageInfo = `I am ${age} years old.`;
+      document.getElementById('age-info').innerText = ageInfo;
+    }
+
+    // Call the function to update age information
+    updateAge();
+  </script>
+    </body>
+</html>
