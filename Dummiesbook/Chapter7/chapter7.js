@@ -60,7 +60,7 @@ function moveRightLeft(e) {
 function moveLeftRight(e) {
     let robotPart = e.target;
     let nlr = 90;
-    let animasion = setInterval(frame, 100); // It is going to call the fram every 10ms 
+    let animasion = setInterval(frame, 100); // It is going to call the fram every 100ms 
 
     function frame() {
         robotPart.style.left = nlr + '%';
